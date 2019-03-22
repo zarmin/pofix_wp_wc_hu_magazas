@@ -87,8 +87,8 @@ for file_entry in args.files:
       po_entry.msgstr = msgstr
 
   if not args.dry_run:
-    po.save(file_entry + '_new_.po')
-    po.save_as_mofile(file_entry + '_new_.mo')
+    po.save(file_entry + '')
+    po.save_as_mofile((file_entry + '').replace('.po', '.mo'))
 
 
 
